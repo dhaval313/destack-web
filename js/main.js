@@ -1,16 +1,60 @@
 // DESTACK SOLUTIONS - Main JavaScript
 
+// Load header and footer components
+async function loadComponents() {
+    const headerPlaceholder = document.getElementById('header-placeholder');
+    const footerPlaceholder = document.getElementById('footer-placeholder');
+    
+    // Get current page name
+    const currentPage = window.location.pathname.split('/').pop().replace('.html', '') || 'index';
+    
+    try {
+        // Load header
+        if (headerPlaceholder) {
+            const headerResponse = await fetch('components/header.html');
+            const headerHtml = await headerResponse.text();
+            headerPlaceholder.innerHTML = headerHtml;
+            
+            // Set active nav link based on current page
+            const navLinks = headerPlaceholder.querySelectorAll('.nav-link[data-page]');
+            navLinks.forEach(link => {
+                if (link.dataset.page === currentPage) {
+                    link.classList.add('active');
+                }
+            });
+        }
+        
+        // Load footer
+        if (footerPlaceholder) {
+            const footerResponse = await fetch('components/footer.html');
+            const footerHtml = await footerResponse.text();
+            footerPlaceholder.innerHTML = footerHtml;
+        }
+        
+        // Initialize other functions after components are loaded
+        initAfterComponents();
+    } catch (error) {
+        console.error('Error loading components:', error);
+    }
+}
+
+function initAfterComponents() {
+    initMobileMenu();
+    initHeaderScroll();
+    initPageTransitions();
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     // Add page transition class
     document.body.classList.add('page-transition');
 
-    initMobileMenu();
-    initHeaderScroll();
+    // Load components first, then initialize everything else
+    loadComponents();
+    
     initScrollReveal();
     initStatsCounter();
     initSmoothScroll();
     initContactForm();
-    initPageTransitions();
 });
 
 // Page Transitions
