@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destack Solutions</title>
+    <meta name="description" content="A magical place where inspiration is found at every turn.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/Logo/icon.png">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('YOUR_PUBLIC_KEY');
+        })();
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="app-container">
+        <!-- Navigation Background (Layer 1000) -->
+        <div class="navbar-bg"></div>
+
+        <!-- Navigation Content (Layer 10001) -->
+        <header class="navbar">
+            <div class="logo">
+                <img src="assets/Logo/Full_Logo_Light_-removebg-preview.png" alt="Destack Logo">
+            </div>
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact Us</a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section id="home" class="hero-section">
+                <!-- Left Column: Content -->
+                <div class="hero-content">
+                    <span class="label-small">FULL STACK DEVELOPMENT</span>
+                    <h1 class="headline">Building Scalable Digital Solutions</h1>
+                    <p class="hero-subtext">Expert Web, Mobile, and Desktop Application Development tailored for your
+                        growth.</p>
+                    <a href="#about" class="btn btn-black btn-wide">Our Services</a>
+                </div>
+
+                <!-- Right Column: Visual Composition -->
+                <div class="hero-visual">
+                    <div class="visual-container">
+                        <!-- Layer 2: Giant Text with Integrated Stack -->
+                        <div class="element-text">
+                            <span>D</span>
+                            <!-- Integrated Stack as 'E' -->
+                            <div class="element-rectangles">
+                                <div class="rect"></div>
+                                <div class="rect"></div>
+                                <div class="rect"></div>
+                            </div>
+                            <span>STACK</span>
+                        </div>
+
+                        <!-- Cursor Follower (Moved to Body Root) -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Us Section -->
+            <section id="about" class="about-section">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="label-small">WHAT WE DO</span>
+                        <h2 class="section-title">Our Expertise</h2>
+                    </div>
+
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" class="icon-svg">
+                                    <path
+                                        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M2 12H22" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2Z"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h3>Web Development</h3>
+                            <p>We build robust, scalable web applications using the latest technologies like React,
+                                Next.js, and Node.js. Our solutions are designed for performance and growth.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" class="icon-svg">
+                                    <path d="M12 18H12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M7 21H17C18.1046 21 19 20.1046 19 19V5C19 3.89543 18.1046 3 17 3H7C5.89543 3 5 3.89543 5 5V19C5 20.1046 5.89543 21 7 21Z"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h3>Mobile Solutions</h3>
+                            <p>Native-quality experiences for iOS and Android using Flutter and React Native. We ensure
+                                your mobile presence is seamless and engaging.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" class="icon-svg">
+                                    <path
+                                        d="M20 16V6C20 5.46957 19.7893 4.96086 19.4142 4.58579C19.0391 4.21071 18.5304 4 18 4H6C5.46957 4 4.96086 4.21071 4.58579 4.58579C4.21071 4.96086 4 5.46957 4 6V16M2 16H22M12 16V20M8 20H16"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h3>Desktop Applications</h3>
+                            <p>Powerful cross-platform desktop software built with Electron. Combining web flexibility
+                                with native performance for Windows, macOS, and Linux.</p>
+                        </div>
+                    </div>
+
+                    <!-- Founder Section -->
+                    <div class="founder-section">
+                        <div class="founder-image-wrapper">
+                            <img src="Assets/Logo/dhaval1.jpg" alt="Dhaval - Founder of Destack Solutions">
+                            <div class="founder-card-bg"></div>
+                        </div>
+                        <div class="founder-content">
+                            <span class="label-small">LEADERSHIP</span>
+                            <h2 class="section-title left-align">Meet the Founder</h2>
+                            <p class="founder-bio">
+                                "At Destack Solutions, we believe in the power of code to transform ideas into reality.
+                                Our mission is to provide businesses with the technological backbone they need to
+                                efficiency and innovation."
+                            </p>
+                            <div class="founder-signature">
+                                <h4>Dhaval</h4>
+                                <span>Founder & Lead Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Us Section -->
+            <section id="contact" class="contact-section">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="label-small">GET IN TOUCH</span>
+                        <h2 class="section-title">Start Your Project</h2>
+                    </div>
+
+                    <div class="contact-wrapper">
+                        <!-- Contact Info Cards -->
+                        <div class="contact-sidebar">
+                            <div class="info-card">
+                                <div class="info-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="icon-svg">
+                                        <path
+                                            d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div class="info-text">
+                                    <h4>Email Us</h4>
+                                    <a href="mailto:hello@destacksolutions.com">hello@destacksolutions.com</a>
+                                    <span class="info-sub">Online 24/7</span>
+                                </div>
+                            </div>
+
+                            <div class="info-card">
+                                <div class="info-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="icon-svg">
+                                        <path
+                                            d="M22 16.92V19.92C22.0011 20.1986 21.9441 20.4742 21.8325 20.7294C21.7209 20.9846 21.5573 21.2137 21.3521 21.402C21.1468 21.5902 20.9046 21.7336 20.6407 21.8228C20.3769 21.912 20.0974 21.9452 19.82 21.92C16.7429 21.5857 13.787 20.5342 11.19 18.83C8.77382 17.2281 6.72182 15.1761 5.12 12.76C3.41584 10.163 2.36427 7.20711 2.03 4.13C2.00481 3.85259 2.03799 3.5731 2.1272 3.30926C2.21641 3.04541 2.35978 2.80316 2.54805 2.5979C2.73632 2.39264 2.96542 2.22901 3.22061 2.11743C3.47579 2.00584 3.75135 1.94884 4.03 1.95H7.03C7.54585 1.94582 8.04417 2.14173 8.42398 2.49836C8.8038 2.85499 9.03444 3.34324 9.07 3.86C9.13601 4.86907 9.38209 5.86065 9.8 6.8C9.91689 7.07073 9.94437 7.37125 9.87895 7.66299C9.81352 7.95473 9.65825 8.22432 9.43 8.44L7.7 10.17C9.66388 13.9298 12.7402 17.0061 16.5 18.97L18.23 17.24C18.4457 17.0118 18.7153 16.8565 19.007 16.7911C19.2988 16.7256 19.5993 16.7531 19.87 16.87C20.8094 17.2879 21.8009 17.534 22.81 17.6C23.3323 17.6372 23.8248 17.8732 24.1837 18.2592C24.5426 18.6453 24.7386 19.1495 24.73 19.67V19.92H22V16.92Z"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div class="info-text">
+                                    <h4>Call Us</h4>
+                                    <a href="tel:+917698114015">+91 76981 14015</a>
+                                    <span class="info-sub">Mon-Fri, 9am - 7pm</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Form -->
+                        <div class="contact-form-container">
+                            <form class="contact-form" id="contactForm">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="name">Name</label>
+                                        <input type="text" id="name" name="name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="service">Service Type</label>
+                                    <!-- Use a wrapper for custom select -->
+                                    <div class="custom-select-wrapper">
+                                        <select id="service" name="service" required style="display: none;">
+                                            <option value="" disabled selected>Select a Service</option>
+                                            <option value="web-dev">Web Development</option>
+                                            <option value="mobile-app">Mobile App Development</option>
+                                            <option value="desktop-app">Desktop Application</option>
+                                            <option value="other">Other Inquiry</option>
+                                        </select>
+
+                                        <div class="custom-select">
+                                            <div class="custom-select-trigger">
+                                                <span>Select a Service</span>
+                                                <div class="arrow"></div>
+                                            </div>
+                                            <div class="custom-options">
+                                                <div class="custom-option" data-value="web-dev">Web Development</div>
+                                                <div class="custom-option" data-value="mobile-app">Mobile App
+                                                    Development</div>
+                                                <div class="custom-option" data-value="desktop-app">Desktop Application
+                                                </div>
+                                                <div class="custom-option" data-value="other">Other Inquiry</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Project Details</label>
+                                    <textarea id="message" name="message" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-black btn-block">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <div class="cursor-blur-spot"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
